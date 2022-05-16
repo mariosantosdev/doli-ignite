@@ -34,6 +34,7 @@ export function TaskList() {
     cloneTasks[taskIndex] = { ...task, isComplete: !task.isComplete };
 
     setTasks(cloneTasks);
+    setNewTaskTitle('')
   }
 
   function handleRemoveTask(id: number) {
